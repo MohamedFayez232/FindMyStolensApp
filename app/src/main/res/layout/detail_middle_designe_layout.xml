@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/lost_details_tittle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/device_deatils_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lost_info_details"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:textSize="20sp"
+                android:textColor="#FD0202"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_details_tittle_text">
+
+            <TextView
+                android:id="@+id/serial_numer_tittle_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_number"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/serial_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/serial_numer_tittle_details">
+            <ImageView
+                android:id="@+id/serial_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/vin_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <TextView
+                android:id="@+id/actual_serial_text_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/serial_ic"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="1223445667777"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/date_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/serial_relative">
+
+                <TextView
+                    android:id="@+id/date_of_stolen_tittle_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:id="@+id/stolen_date_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:layout_below="@id/date_of_stolen_tittle_details">
+                <ImageView
+                    android:id="@+id/date_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/stolen_date_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+
+                <TextView
+                    android:id="@+id/actual_Sdate_text_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/date_icon"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:gravity="right"
+                    android:text="1223445667777"/>
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/place_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_relative">
+
+                <TextView
+                    android:id="@+id/place_of_stolen_tittle_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/stolen_place_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/place_of_stolen_tittle_details">
+                    <ImageView
+                        android:id="@+id/place_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/place_icon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp"/>
+
+
+                    <TextView
+                        android:id="@+id/actual_Splace_text_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/place_icon"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="30dp"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:text="1223445667777"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/place_relative"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/color_tittle_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/color_tittle_text_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color_tittle"
+                       android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/color_tittle_text_details">
+
+                        <ImageView
+                            android:id="@+id/color_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/color_icon"
+                            android:layout_marginEnd="20dp"/>
+
+
+                        <TextView
+                            android:id="@+id/actual_color_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/color_ic"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="right"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginStart="30dp"
+                            android:text="احمر ارجواني"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vin_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/color_tittle_relative"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/vin_tittle_text_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:text="@string/type" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/vin_tittle_text_details">
+
+                        <ImageView
+                            android:id="@+id/type_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/phone_type_ic" />
+
+
+                        <TextView
+                            android:id="@+id/actual_type_text_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@id/type_ic"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="right"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="سامسونج جالاكسي" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <!--
+                <view
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/vin_relative"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="30dp"/>
+                    -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vin_relative"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                  <TextView
+                      android:id="@+id/publisher_info_tittle"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/publicher_info"
+                      android:layout_marginEnd="20dp"
+                      android:textSize="20sp"
+                      android:textColor="#022CFD"
+                      android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:id="@+id/user_name_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/publisher_info_tittle">
+
+                        <ImageView
+                            android:id="@+id/publisher_name_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/user_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/actual_punlisher_name_text_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/publisher_name_icon"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="محمد فايز ابوالحسن"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/user_phone_relative_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_name_relative">
+
+                        <ImageView
+                            android:id="@+id/publisher_phone_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/phone_ic"/>
+
+
+                        <TextView
+                            android:id="@+id/actual_punlisher_phone_text_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/publisher_phone_icon"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="011283744884748"/>
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_phone_relative_details">
+
+                        <ImageView
+                            android:id="@+id/publisher_address_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/place_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/actual_punlisher_address_text_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/publisher_address_icon"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="قنا شارع محممد علي"/>
+                    </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </layout>

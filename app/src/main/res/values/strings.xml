@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">رجعلي مسروقاتي</string>
+
+    <string name="name_of_lost_thing">ادخل اسم الجهاز</string>
+    <string name="serialNumer_of_lost_thing">ادخل رقم السيريال للجهاز </string>
+    <string name="password_changed">تم تغيير كلمة المرور</string>
+    <string name="place_ofStolen_lost_thing">مكان السرقة بالتحديد</string>
+    <string name="date_ofStolen_lost_thing">تاريخ السرقة</string>
+    <string name="send_data_button">ارسال</string>
+    <string name="UserPhone">رقم الموبايل</string>
+    <string name="userEmail">البريد الالكتروني</string>
+    <string name="userPass">كلمة السر</string>
+    <string name="account_created">"تم انشاء الحساب "</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="logged">تم تسجيل الدخول</string>
+    <string name="labs">لابتوبات</string>
+    <string name="phone">موبايلات</string>
+    <string name="color_ofStolen_lost_thing">اللون</string>
+    <string name="next_text_button">التالي</string>
+    <string name="add_images">اضافة صور</string>
+    <string name="lost_info_details">معلومات الجهاز</string>
+    <string name="serial_number">رقم السيريال</string>
+    <string name="place">مكان حدوث السرقة</string>
+    <string name="date">تاريخ حدوث السرقة</string>
+    <string name="color_tittle">اللون</string>
+    <string name="publicher_info">معلومات الناشر</string>
+    <string name="Useraddress">العنوان</string>
+    <string name="cars">مركبات نقل</string>
+    <string name="childrens">اطفال مختفية</string>
+    <string name="type">النوع</string>
+    <string name="enter_motor_number">ادخل رقم الماتور او الشاسيه او رقم vin</string>
+    <string name="enter_serial_number">ادخل رقم السيريال للجهاز</string>
+    <string name="children_pirthdate">تاريح الميلاد</string>
+    <string name="children_name">اسم الطفل</string>
+    <string name="children_nationa_id">الرقم القومي من شهادة ميلاده(لن يظهر للعامة)</string>
+    <string name="children_hidden_date">تاريخ الاختفاء</string>
+    <string name="children_hidden_place">مكان الاختفاء</string>
+    <string name="validate_spinner">يجب اختيار قسم</string>
+    <string name="children_type">النوع</string>
+    <string name="spinner_phones">موبايلات</string>
+    <string name="spinner_labtobs">لابتوبات</string>
+    <string name="spinner_cars_vichels">مركبات</string>
+    <string name="spinner_childrens">اطفال مفقودة</string>
+    <string name="children_info">معلومات الطفل المختفي</string>
+    <string name="no_device_text">غير موجود</string>
+    <string name="what_your_search_children">لا تتردد في استرجاع طفل لاهله و هذا عمل رائع عند الله !</string>
+    <string name="enter_child_name">ادخل اسم الطفل</string>
+    <string name="what_your_search_devices">ماذا تريد ان تسترجع اليوم !</string>
+    <string name="nationaId_children_privete">الرقم القومي للطفل لا يظهر للعامة لاحتياطات خصوصية وامنية</string>
+    <string name="nattional_idd_tittle">الرقم القومي من شهادة الميلاد</string>
+    <string name="account_details">التفاصيل</string>
+    <string name="edit_post_text">تعديل هذا الابلاغ</string>
+    <string name="are_u_fount_this_lost">هل عثرت علي هذا العنصر ؟</string>
+    <string name="delte_item_text">حذف</string>
+    <string name="childrens_category_text">ابلاغات الاطفال المتغيبين</string>
+    <string name="devices_category_text">ابلاغات الاجهزة المحمولة والمركبات</string>
+    <string name="no_reports">لا توجد بلاغات</string>
+    <string name="update_post_button">تحديث</string>
+    <string name="post_updated">تم تحديث البيانات</string>
+    <string name="post_updated_error">يوجد خطأ فني</string>
+    <string name="add_post_fragmentName">اضافة ابلاغ</string>
+    <string name="edituser_post_fragment">تعديل الابلاغ</string>
+    <string name="userProfile_fragment">الصفحة الشخصية</string>
+    <string name="items_removed">تم الحذف</string>
+    <string name="items_removed_error">حاول لاحقا</string>
+    <string name="items_removed_error2">خطأ فني حاول لاحقا</string>
+    <string name="wrong_login_details">تأكد من صحة البيانات</string>
+    <string name="email_registred_before">البريد الالكتروني مستخدم بالفعل</string>
+    <string name="address">العنوان</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="register_button">التسجيل</string>
+    <string name="security_question">افضل 5 ارقام لديك كسؤال امان</string>
+    <string name="cahnge_pass">"تغيير "</string>
+    <string name="new_userPass">كلمة السر الجديدة</string>
+    <string name="no_notification">لا توجد اشعارات</string>
+    <string name="updated_info_updated">تم تحديث البيانات</string>
+    <string name="details_fragment">التفاصيل</string>
+    <string name="shareing_post">"مرحبا , لا تقصر في مساعدة الاخرين لاسترجاع مسروقاتهم اليوم وحمل التطبيق "</string>
+    <string name="Useremail">البريد الالكتروني</string>
+    <string name="correct_security_question">رمز الامان صحيح</string>
+    <string name="permissions_required">صلاحيى مطلوبة</string>
+    <string name="permissions_info"> يجب الموافقة علي الوصول للصور لاضافتها لابلاغك لمزيد من المصداقية</string>
+    <string name="ok_button">تم</string>
+    <string name="cant_report_now">عذرا لا يمكن الابلاغ علي هذا العنصر حاليا فهو مؤكد من قبل الناشر</string>
+    <string name="must_logged_first">يجب تسجيل الدخول اولا</string>
+
+
+    <string-array name="numbers">
+        <item>""</item>
+        <item>موبايلات </item>
+        <item>لابات</item>
+        <item>اطفال مخطوفة </item>
+        <item>مركبات </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="wrong_security_question">الرمز غير صحيح</string>
+    <string name="not_text">اكتب رمز الامان</string>
+</resources>

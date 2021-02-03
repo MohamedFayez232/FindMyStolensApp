@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "926837762471",
+    "project_id": "findmythings-68750",
+    "storage_bucket": "findmythings-68750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926837762471:android:968fb8e808b7f03522ee82",
+        "android_client_info": {
+          "package_name": "com.i.findmythings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926837762471-0b0mtk1iukg6qlc721bi24v319n0d5av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.i.findmythings",
+            "certificate_hash": "2849be89485bd45a7782a9e8380ed47655244689"
+          }
+        },
+        {
+          "client_id": "926837762471-p592gjeecbctu8kr8ts9066jvf0so4lf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBckxy2aQ13cDci47SGy-cnTYKVCxjoLZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926837762471-p592gjeecbctu8kr8ts9066jvf0so4lf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

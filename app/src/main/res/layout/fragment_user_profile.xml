@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBF7F7">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/anim_toolbar_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nestedScrollView3">
+
+
+            <TextView
+                android:id="@+id/fragment_name_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userEmail"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back_image_toolbar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/fragment_name_toolbar"
+                android:gravity="center"
+                android:src="@drawable/white_back_ic"
+                android:layout_marginEnd="27dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_name_toolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/usrname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="end"
+                    android:text="UserName"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/usrEmail_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="end"
+                    android:text="User Email"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="16dp" />
+
+
+                <TextView
+                    android:id="@+id/user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="user address"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="end"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="user phone"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="end"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_layiut"
+            android:layout_width="match_parent"
+            android:layout_below="@id/username_layout"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+            <TextView
+                android:id="@+id/details_text_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/account_details" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/back_image_ic" />
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/devices_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/devices_category_text"
+            android:textSize="18sp"
+            android:layout_below="@+id/details_layiut"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/devices_recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/devices_text">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/user_profile_devices_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <ProgressBar
+                android:id="@+id/devices_category_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/no_devices_reposrts_text_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/childrens_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/childrens_category_text"
+            android:textSize="18sp"
+            android:layout_below="@+id/devices_recycle_layout"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/childrens_reports_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/childrens_text">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/user_profile_childrens_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"/>
+
+                <ProgressBar
+                    android:id="@+id/childrens_category_progressbar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="80dp"/>
+
+
+                <TextView
+                    android:id="@+id/no_childrens_reposrts_text_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/logou_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/childrens_reports_recycle">
+
+
+            <ImageView
+                android:id="@+id/log_out_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/logout_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                />
+
+
+
+            <TextView
+                android:id="@+id/log_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="تسجيل الخروج"
+                android:layout_toStartOf="@id/log_out_image"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+</layout>

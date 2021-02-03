@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.i.findmythings.home.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_lostsCategoriesFragment"
+            app:destination="@id/lostsCategoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_lostsChildrensFragment"
+            app:destination="@id/lostsChildrensFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addLostFragment"
+        android:name="com.i.findmythings.add.ui.AddLostFragment"
+        android:label="fragment_add_lost"
+        tools:layout="@layout/fragment_add_lost" >
+        <action
+            android:id="@+id/action_addLostFragment_to_uploadLostsFragment"
+            app:destination="@id/uploadLostsFragment" />
+        <action
+            android:id="@+id/action_addLostFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.i.findmythings.user.profile.ui.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_editUserPostsFragment"
+            app:destination="@id/editUserPostsFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_lostDetailsragment"
+            app:destination="@id/lostDetailsragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_editBasicUserProfileInfoFragment"
+            app:destination="@id/editBasicUserProfileInfoFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/userProfileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUserFragment"
+        android:name="com.i.findmythings.user.register.ui.RegisterUserFragment"
+        android:label="fragment_register_user"
+        tools:layout="@layout/fragment_register_user" >
+        <action
+            android:id="@+id/action_registerUserFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/registerUserFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_registerUserFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <argument
+            android:name="currenrUserId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.i.findmythings.user.login.ui.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_registerUserFragment"
+            app:destination="@id/registerUserFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/logInFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_logInFragment_to_userChangingPasswordFragment"
+            app:destination="@id/userChangingPasswordFragment" />
+        <argument
+            android:name="currentUserUid"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/uploadLostsFragment"
+        android:name="com.i.findmythings.UploadLostsFragment"
+        android:label="fragment_upload_losts"
+        tools:layout="@layout/fragment_upload_losts" >
+
+        <argument android:name="deviceName"
+            app:argType="string" />
+        <argument
+            android:name="deviceSerialNumber"
+            app:argType="string" />
+        <argument
+            android:name="deviceColor"
+            app:argType="string" />
+        <argument
+            android:name="VinNumber"
+            app:argType="string" />
+        <argument
+            android:name="Solten_Place"
+            app:argType="string" />
+        <argument
+            android:name="stolen_date"
+            app:argType="string" />
+        <argument
+            android:name="mainChild"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_uploadLostsFragment_to_addLostFragment"
+            app:destination="@id/addLostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lostsCategoriesFragment"
+        android:name="com.i.findmythings.categories.ui.LostsCategoriesFragment"
+        android:label="fragment_losts_categories"
+        tools:layout="@layout/fragment_losts_categories" >
+        <argument
+            android:name="recyclerClivkedItemPosition"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_lostsCategoriesFragment_to_lostDetailsragment"
+            app:destination="@id/lostDetailsragment"
+            app:enterAnim="@anim/zom_out_animation_transition"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_lostsCategoriesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/lostDetailsragment"
+        android:name="com.i.findmythings.LostDetailsragment"
+        android:label="fragment_lost_detailsragment"
+        tools:layout="@layout/fragment_lost_detailsragment" >
+
+        <argument
+            android:name="lost_serial_number_as_id"
+            app:argType="string" />
+        <argument
+            android:name="mainchild"
+            app:argType="string" />
+        <argument
+            android:name="publisher_id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_lostDetailsragment_to_lostsChildrensFragment"
+            app:destination="@id/lostsChildrensFragment" />
+        <action
+            android:id="@+id/action_lostDetailsragment_to_lostsCategoriesFragment"
+            app:destination="@id/lostsCategoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lostsChildrensFragment"
+        android:name="com.i.findmythings.LostsChildrensFragment"
+        android:label="fragment_losts_childrens"
+        tools:layout="@layout/fragment_losts_childrens" >
+        <action
+            android:id="@+id/action_lostsChildrensFragment_to_lostDetailsragment"
+            app:destination="@id/lostDetailsragment"
+            app:enterAnim="@anim/zom_out_animation_transition"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/zom_out_animation_transition"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_lostsChildrensFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserPostsFragment"
+        android:name="com.i.findmythings.user.userediting.ui.EditUserPostsFragment"
+        android:label="fragment_edit_user_posts"
+        tools:layout="@layout/fragment_edit_user_posts" >
+        <action
+            android:id="@+id/action_editUserPostsFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <argument
+            android:name="post_id"
+            app:argType="string" />
+        <argument
+            android:name="postCategory"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userChangingPasswordFragment"
+        android:name="com.i.findmythings.UserChangingPasswordFragment"
+        android:label="fragment_user_changing_password"
+        tools:layout="@layout/fragment_user_changing_password" >
+        <action
+            android:id="@+id/action_userChangingPasswordFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/userChangingPasswordFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="currentUserUid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.i.findmythings.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editBasicUserProfileInfoFragment"
+        android:name="com.i.findmythings.EditBasicUserProfileInfoFragment"
+        android:label="fragment_edit_basic_user_profile_info"
+        tools:layout="@layout/fragment_edit_basic_user_profile_info" >
+        <action
+            android:id="@+id/action_editBasicUserProfileInfoFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@anim/fragment_fade_enter"
+            app:popEnterAnim="@anim/fragment_fade_exit"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashragment"
+        android:name="com.i.findmythings.Splashragment"
+        android:label="fragment_splashragment"
+        tools:layout="@layout/fragment_splashragment" >
+        <action
+            android:id="@+id/action_splashragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/splashragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>
