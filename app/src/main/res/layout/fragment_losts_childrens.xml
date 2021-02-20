@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".LostsChildrensFragment">
+    tools:context=".categories.childrens.LostsChildrensFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 app:layout_constraintVertical_bias="0.34">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText"
+                    android:id="@+id/textInputEditText_searc_childrens"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
@@ -81,10 +81,10 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/search_ic"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputEditText_searc_childrens"
                     app:layout_constraintHorizontal_bias="0.957"
-                    app:layout_constraintStart_toStartOf="@+id/textInputEditText"
-                    app:layout_constraintTop_toTopOf="@+id/textInputEditText"
+                    app:layout_constraintStart_toStartOf="@+id/textInputEditText_searc_childrens"
+                    app:layout_constraintTop_toTopOf="@+id/textInputEditText_searc_childrens"
                     app:layout_constraintVertical_bias="0.179" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,7 +110,6 @@
             android:id="@+id/progress_bar_childrens_recycler"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/serach_editText"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
@@ -123,7 +122,6 @@
             android:id="@+id/children_founded_children_recycler_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/serach_editText"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:gravity="center"

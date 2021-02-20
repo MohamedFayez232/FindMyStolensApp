@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.i.findmythings.R
-import com.i.findmythings.categories.model.*
+import com.i.findmythings.categories.devices.model.*
 import com.i.findmythings.databinding.FragmentUserProfileBinding
 
 
@@ -29,10 +29,6 @@ class UserProfileFragment : Fragment() {
 
     lateinit var binding: FragmentUserProfileBinding
 
-    private lateinit var UserName: String
-    private lateinit var Useraddress: String
-    private lateinit var UserEmail: String
-    private lateinit var UserPhone: String
 
     lateinit var mauth : FirebaseAuth
 
@@ -44,7 +40,7 @@ class UserProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_user_profile, container, false)
 
-        binding.usernameLayout.visibility = View.GONE
+
 
         getUserChildrensReports()
         getUserDevicesReports()
@@ -252,7 +248,7 @@ class UserProfileFragment : Fragment() {
                 {
                     val action = UserProfileFragmentDirections
                             .actionUserProfileFragmentToLostDetailsragment(model.serial_number_of_lost,
-                                    MainChild, FirebaseAuth.getInstance().currentUser!!.uid)
+                                    model.category, FirebaseAuth.getInstance().currentUser!!.uid)
                     findNavController().navigate(action)
                 })
                 val category = model.category

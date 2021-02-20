@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">رجعلي مسروقاتي</string>
+    <string name="app_name">رجعلي حاجتي</string>
 
     <string name="name_of_lost_thing">ادخل اسم الجهاز</string>
     <string name="serialNumer_of_lost_thing">ادخل رقم السيريال للجهاز </string>
@@ -78,10 +78,10 @@
     <string name="shareing_post">"مرحبا , لا تقصر في مساعدة الاخرين لاسترجاع مسروقاتهم اليوم وحمل التطبيق "</string>
     <string name="Useremail">البريد الالكتروني</string>
     <string name="correct_security_question">رمز الامان صحيح</string>
-    <string name="permissions_required">صلاحيى مطلوبة</string>
+    <string name="permissions_required">صلاحيه مطلوبة</string>
     <string name="permissions_info"> يجب الموافقة علي الوصول للصور لاضافتها لابلاغك لمزيد من المصداقية</string>
     <string name="ok_button">تم</string>
-    <string name="cant_report_now">عذرا لا يمكن الابلاغ علي هذا العنصر حاليا فهو مؤكد من قبل الناشر</string>
+    <string name="cant_report_now" translatable="false">عذرا لا يمكن الابلاغ علي هذا العنصر حاليا فهو مؤكد من قبل الناشر</string>
     <string name="must_logged_first">يجب تسجيل الدخول اولا</string>
 
 
@@ -95,4 +95,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="wrong_security_question">الرمز غير صحيح</string>
     <string name="not_text">اكتب رمز الامان</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="what_problem_in_this_post">ما المشكلة في هذا الابلاغ ؟ اوصف بدقة</string>
+    <string name="send_report">ارسال الابلاغ</string>
+    <string name="eecribe_with_sumrization">اوصف باختصار</string>
+    <string name="decribtion_problem_minmum">يجب الا يقل الوصف عن 20 حرف</string>
+    <string name="thanks_for_report">نشكرك علي ابلاغك . نسعي دائما لخلق بيئة متعاونة وصادقة . سيتم ابلاغك بتقرير المراجعة</string>
+    <string name="error_thanks_for_report">"تعذر ارسال ابلاغك "</string>
+    <string name="uploading_sucess">"تم النشر "</string>
+    <string name="uploading_Not_sucess">حدث خطأ حاول لاحقا</string>
+    <string name="images_validation">يجب اختيار صورة علي الاقل</string>
+    <string name="serial_number_length">16 رقم او حرف علي الاقل</string>
+    <string name="email_validations">يجب ان يحتوي الايميل علي @ و زcom</string>
+    <string name="must_be_5_numbers">يجب ان تكون  5 ارقام</string>
 </resources>

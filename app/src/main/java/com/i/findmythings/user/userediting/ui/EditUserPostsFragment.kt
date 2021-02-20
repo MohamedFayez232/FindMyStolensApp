@@ -19,8 +19,7 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.i.findmythings.R
-import com.i.findmythings.UploadLostsFragmentDirections
-import com.i.findmythings.add.ui.AddLostFragmentDirections
+import com.i.findmythings.add_lost.ui.AddLostFragmentDirections
 import com.i.findmythings.databinding.FragmentEditUserPostsBinding
 import kotlinx.android.synthetic.main.images_firebase_recycler_layout.*
 

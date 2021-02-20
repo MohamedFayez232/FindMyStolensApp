@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/addLostFragment"
-        android:name="com.i.findmythings.add.ui.AddLostFragment"
+        android:name="com.i.findmythings.add_lost.ui.AddLostFragment"
         android:label="fragment_add_lost"
         tools:layout="@layout/fragment_add_lost" >
         <action
@@ -99,7 +99,7 @@
     </fragment>
     <fragment
         android:id="@+id/uploadLostsFragment"
-        android:name="com.i.findmythings.UploadLostsFragment"
+        android:name="com.i.findmythings.add_lost.ui.UploadLostsFragment"
         android:label="fragment_upload_losts"
         tools:layout="@layout/fragment_upload_losts" >
 
@@ -129,7 +129,7 @@
     </fragment>
     <fragment
         android:id="@+id/lostsCategoriesFragment"
-        android:name="com.i.findmythings.categories.ui.LostsCategoriesFragment"
+        android:name="com.i.findmythings.categories.devices.ui.LostsCategoriesFragment"
         android:label="fragment_losts_categories"
         tools:layout="@layout/fragment_losts_categories" >
         <argument
@@ -149,7 +149,7 @@
     </fragment>
     <fragment
         android:id="@+id/lostDetailsragment"
-        android:name="com.i.findmythings.LostDetailsragment"
+        android:name="com.i.findmythings.details.ui.LostDetailsragment"
         android:label="fragment_lost_detailsragment"
         tools:layout="@layout/fragment_lost_detailsragment" >
 
@@ -168,10 +168,13 @@
         <action
             android:id="@+id/action_lostDetailsragment_to_lostsCategoriesFragment"
             app:destination="@id/lostsCategoriesFragment" />
+        <action
+            android:id="@+id/action_lostDetailsragment_to_postReporFragment"
+            app:destination="@id/postReporFragment" />
     </fragment>
     <fragment
         android:id="@+id/lostsChildrensFragment"
-        android:name="com.i.findmythings.LostsChildrensFragment"
+        android:name="com.i.findmythings.categories.childrens.LostsChildrensFragment"
         android:label="fragment_losts_childrens"
         tools:layout="@layout/fragment_losts_childrens" >
         <action
@@ -202,7 +205,7 @@
     </fragment>
     <fragment
         android:id="@+id/userChangingPasswordFragment"
-        android:name="com.i.findmythings.UserChangingPasswordFragment"
+        android:name="com.i.findmythings.user.login.ui.UserChangingPasswordFragment"
         android:label="fragment_user_changing_password"
         tools:layout="@layout/fragment_user_changing_password" >
         <action
@@ -228,7 +231,7 @@
     </fragment>
     <fragment
         android:id="@+id/editBasicUserProfileInfoFragment"
-        android:name="com.i.findmythings.EditBasicUserProfileInfoFragment"
+        android:name="com.i.findmythings.user.userediting.ui.EditBasicUserProfileInfoFragment"
         android:label="fragment_edit_basic_user_profile_info"
         tools:layout="@layout/fragment_edit_basic_user_profile_info" >
         <action
@@ -255,5 +258,17 @@
             app:popUpTo="@id/splashragment"
             app:popUpToInclusive="true" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/postReporFragment"
+        android:name="com.i.findmythings.details.ui.PostReporFragment"
+        android:label="fragment_post_repor"
+        tools:layout="@layout/fragment_post_repor" >
+        <action
+            android:id="@+id/action_postReporFragment_to_lostDetailsragment"
+            app:destination="@id/lostDetailsragment" />
+        <argument
+            android:name="postId"
+            app:argType="string" />
     </fragment>
 </navigation>

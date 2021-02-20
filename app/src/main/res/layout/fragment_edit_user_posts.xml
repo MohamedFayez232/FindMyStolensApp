@@ -21,7 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:context=".add.ui.AddLostFragment">
+                tools:context=".add_lost.ui.AddLostFragment">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/relativeLayout7"
@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/nestedScrollView3">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
                         android:id="@+id/fragment_name_toolbar"
@@ -50,11 +50,11 @@
                         android:layout_height="25dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="27dp"
                         android:layout_toStartOf="@id/fragment_name_toolbar"
                         android:gravity="center"
-                        android:layout_marginTop="16dp"
                         android:src="@drawable/back_ic"
-                        android:layout_marginEnd="27dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/fragment_name_toolbar"
                         app:layout_constraintStart_toStartOf="parent"
@@ -66,10 +66,10 @@
                     android:id="@+id/relativeLayout9"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="70dp">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
                         android:id="@+id/name_layour_linear"
@@ -234,13 +234,13 @@
                         android:layout_height="50dp"
                         android:layout_below="@id/date_of_stolen_layout_linear"
                         android:layout_gravity="center"
-                        android:background="@drawable/radious_button_style"
                         android:layout_marginStart="50dp"
                         android:layout_marginTop="30dp"
-                        android:textColor="@color/white"
                         android:layout_marginEnd="50dp"
                         android:layout_marginBottom="20dp"
-                        android:text="@string/update_post_button" />
+                        android:background="@drawable/radious_button_style"
+                        android:text="@string/update_post_button"
+                        android:textColor="@color/white" />
 
 
                 </RelativeLayout>

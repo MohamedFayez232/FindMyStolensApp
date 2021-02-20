@@ -76,4 +76,24 @@
     <string name="spinner_labtobs">LabTops</string>
     <string name="spinner_cars_vichels">Citrus and transport</string>
     <string name="shareing_post">Hello, do not fail to help others to retrieve their stolen items today and download the application</string>
+    <string name="Useremail">Email</string>
+    <string name="correct_security_question">Security Code</string>
+    <string name="permissions_required">Required Permission</string>
+    <string name="permissions_info">We Must Open Gallery To Add Images</string>
+    <string name="ok_button">Done</string>
+    <string name="must_logged_first">LogIn First</string>
+    <string name="wrong_security_question">Code Not Correct</string>
+    <string name="not_text">Write Security Code</string>
+    <string name="what_problem_in_this_post">What is the Prioblem</string>
+    <string name="send_report">Send Report</string>
+    <string name="eecribe_with_sumrization">Describe</string>
+    <string name="decribtion_problem_minmum">Describiton Must Not Exceeds 20 char</string>
+    <string name="thanks_for_report">We Seek To Create A Powerful Environement , We Will Tell You About This Report After Review It</string>
+    <string name="error_thanks_for_report">SomeThing Wrong</string>
+    <string name="uploading_sucess">Posted</string>
+    <string name="uploading_Not_sucess">SomeThing Wrong , Try Again</string>
+    <string name="images_validation">You Must Add one Image At Least</string>
+    <string name="serial_number_length">"16 Number or Char "</string>
+    <string name="email_validations">Must Contains @ and .com</string>
+    <string name="must_be_5_numbers">Must Be only 5 Numbers</string>
 </resources>

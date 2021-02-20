@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".add.ui.AddLostFragment">
+        tools:context=".add_lost.ui.AddLostFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout7"
@@ -46,7 +46,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:context=".add.ui.AddLostFragment">
+                tools:context=".add_lost.ui.AddLostFragment">
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout9"
@@ -70,6 +70,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="20dp"
+                            android:textSize="20sp"
                             android:layout_marginBottom="10dp"
                             android:text="اختر التصنيف" />
 
@@ -113,6 +114,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginEnd="20dp"
+                            android:textSize="20sp"
                             android:text="@string/name_of_lost_thing" />
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -123,7 +125,7 @@
                             android:layout_marginEnd="10dp"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
-                            android:textSize="13sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -141,6 +143,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginEnd="20dp"
+                            android:textSize="20sp"
                             android:text="@string/serialNumer_of_lost_thing" />
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -151,7 +154,7 @@
                             android:layout_marginEnd="10dp"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
-                            android:textSize="13sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -170,6 +173,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginEnd="20dp"
+                            android:textSize="20sp"
                             android:text="@string/place_ofStolen_lost_thing" />
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -180,7 +184,7 @@
                             android:layout_marginEnd="10dp"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
-                            android:textSize="13sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -208,6 +212,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
+                                android:textSize="20sp"
                                 android:layout_marginEnd="20dp"
                                 android:text="@string/color_ofStolen_lost_thing" />
 
@@ -219,7 +224,7 @@
                                 android:layout_marginEnd="10dp"
                                 android:paddingStart="5dp"
                                 android:paddingEnd="5dp"
-                                android:textSize="13sp"
+                                android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -242,6 +247,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="60dp"
+                                android:textSize="20sp"
                                 android:text="@string/type" />
 
                             <com.google.android.material.textfield.TextInputEditText
@@ -252,7 +258,7 @@
                                 android:layout_marginEnd="10dp"
                                 android:paddingStart="5dp"
                                 android:paddingEnd="5dp"
-                                android:textSize="13sp"
+                                android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </RelativeLayout>
@@ -272,6 +278,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginEnd="20dp"
+                            android:textSize="20sp"
                             android:text="@string/date_ofStolen_lost_thing" />
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -282,7 +289,7 @@
                             android:layout_marginEnd="10dp"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
-                            android:textSize="13sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -296,7 +303,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginEnd="50dp"
                         android:textColor="@color/white"
-                        android:background="@drawable/radious_button_style"
+                        android:background="@color/design_default_color_primary"
                         android:layout_marginBottom="20dp"
                         android:text="@string/next_text_button" />
 

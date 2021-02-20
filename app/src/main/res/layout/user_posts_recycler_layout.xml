@@ -63,7 +63,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/image_of_post_recycler_profile"
                 app:layout_constraintHorizontal_bias="0.845"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_of_children_recycler_text"
+                app:layout_constraintTop_toBottomOf="@+id/name_of_post_recycler_text_profile"
                 app:layout_constraintVertical_bias="0.112" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

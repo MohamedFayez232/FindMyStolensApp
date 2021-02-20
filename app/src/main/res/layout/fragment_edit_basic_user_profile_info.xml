@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".EditBasicUserProfileInfoFragment">
+    tools:context=".user.userediting.ui.EditBasicUserProfileInfoFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".add.ui.AddLostFragment">
+                tools:context=".add_lost.ui.AddLostFragment">
 
                 <ImageView
                     android:id="@+id/cancel_change_pass_ic"

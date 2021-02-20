@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never">
+
+
     <RelativeLayout
         android:id="@+id/relativeLayout8"
         android:layout_width="match_parent"
@@ -76,7 +78,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="right"
                 android:textSize="16sp"
-                android:text="1223445667777"/>
+                />
             </RelativeLayout>
 
 
@@ -122,8 +124,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
                     android:textSize="16sp"
-                    android:gravity="right"
-                    android:text="1223445667777"/>
+                    android:gravity="right" />
             </RelativeLayout>
             </RelativeLayout>
 
@@ -171,8 +172,7 @@
                         android:layout_marginBottom="20dp"
                         android:layout_marginStart="30dp"
                         android:gravity="right"
-                        android:textSize="16sp"
-                        android:text="1223445667777"/>
+                        android:textSize="16sp" />
                 </RelativeLayout>
             </RelativeLayout>
 
@@ -225,8 +225,7 @@
                             android:gravity="right"
                             android:textSize="16sp"
                             android:layout_marginBottom="20dp"
-                            android:layout_marginStart="30dp"
-                            android:text="احمر ارجواني"/>
+                            android:layout_marginStart="30dp" />
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -280,7 +279,7 @@
                             android:gravity="right"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:text="سامسونج جالاكسي" />
+                            />
                     </RelativeLayout>
                 </RelativeLayout>
 
@@ -338,8 +337,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="right"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:text="محمد فايز ابوالحسن"/>
+                            android:textSize="16sp" />
                     </RelativeLayout>
 
 
@@ -368,8 +366,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="right"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:text="011283744884748"/>
+                            android:textSize="16sp" />
                     </RelativeLayout>
 
 
@@ -398,8 +395,7 @@
                             android:layout_marginTop="10dp"
                             android:gravity="right"
                             android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:text="قنا شارع محممد علي"/>
+                            android:textSize="16sp" />
                     </RelativeLayout>
 
 

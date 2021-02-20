@@ -76,8 +76,8 @@ class RegisterUserFragment : Fragment() {
         else if(TextUtils.isEmpty(userpassword)){
             binding.userpass.setError("")
         }
-        else if(TextUtils.isEmpty(useremail)){
-            binding.emailLogin.setError("")
+        else if(TextUtils.isEmpty(useremail) || !useremail.contains("@") || !useremail.contains(".com")){
+            binding.emailLogin.setError(resources.getString(R.string.email_validations))
         }
         else if(TextUtils.isEmpty(userphone)){
             binding.UserphoneeditText.setError("")
@@ -85,8 +85,8 @@ class RegisterUserFragment : Fragment() {
         else if(TextUtils.isEmpty(useraddress)) {
             binding.UseraddresseditText.setError("")
         }
-        else if(TextUtils.isEmpty(securityQuestion)) {
-            binding.securityQuestion.setError("")
+        else if(TextUtils.isEmpty(securityQuestion) || securityQuestion.length < 5 || securityQuestion.length > 5) {
+            binding.securityQuestion.setError(resources.getString(R.string.must_be_5_numbers))
         }
 
         else{
@@ -101,6 +101,7 @@ class RegisterUserFragment : Fragment() {
         binding.UsernameeditText.isEnabled = false
         binding.UseraddresseditText.isEnabled = false
         binding.UserphoneeditText.isEnabled = false
+        binding.securityQuestion.isEnabled = false
         binding.registerButton.isClickable = false
 
 

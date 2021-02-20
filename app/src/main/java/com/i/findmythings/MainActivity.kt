@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(){
 
         bottomNavigationHidding()
 
-        navigationController
+      
     /*   this is to handle back icon on app bar auotmatically
         1- and give to it
         all distnations , because of all of them are hiracllty on the same activity

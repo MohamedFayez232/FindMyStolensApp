@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".LostDetailsragment">
+    tools:context=".details.ui.LostDetailsragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     android:src="@drawable/white_back_ic"
                     android:layout_marginEnd="27dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/fragment_name_toolbar"
+                    app:layout_constraintEnd_toStartOf="@+id/fragment_name_toolbar_details"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,6 +70,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout7"
                 app:layout_constraintVertical_bias="0.059" />
 
+            <ProgressBar
+                android:id="@+id/name_posting_date_progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/actual_posting_date_text_details_below_tittle"
+                app:layout_constraintEnd_toEndOf="@+id/actual_posting_date_text_details_below_tittle"
+                app:layout_constraintStart_toStartOf="@+id/actual_posting_date_text_details_below_tittle"
+                app:layout_constraintTop_toTopOf="@+id/lost_name_text_details" />
 
             <TextView
                 android:id="@+id/lost_name_text_details"
@@ -79,7 +87,6 @@
                 android:layout_marginEnd="28dp"
                 android:gravity="center"
                 android:layout_marginTop="45dp"
-                android:text="this is lost name"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -87,6 +94,7 @@
                 app:layout_constraintHorizontal_bias="0.445"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
 
 
             <TextView
@@ -97,12 +105,12 @@
                 android:layout_marginEnd="28dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:text="this is posting date"
                 android:textColor="#003DF3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.445"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lost_name_text_details" />
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
