@@ -137,11 +137,7 @@
             app:argType="integer" />
         <action
             android:id="@+id/action_lostsCategoriesFragment_to_lostDetailsragment"
-            app:destination="@id/lostDetailsragment"
-            app:enterAnim="@anim/zom_out_animation_transition"
-            app:exitAnim="@anim/fragment_fade_exit"
-            app:popEnterAnim="@anim/fragment_fade_enter"
-            app:popExitAnim="@anim/fragment_fade_exit" />
+            app:destination="@id/lostDetailsragment" />
         <action
             android:id="@+id/action_lostsCategoriesFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -179,11 +175,7 @@
         tools:layout="@layout/fragment_losts_childrens" >
         <action
             android:id="@+id/action_lostsChildrensFragment_to_lostDetailsragment"
-            app:destination="@id/lostDetailsragment"
-            app:enterAnim="@anim/zom_out_animation_transition"
-            app:exitAnim="@anim/fragment_fade_exit"
-            app:popEnterAnim="@anim/zom_out_animation_transition"
-            app:popExitAnim="@anim/fragment_fade_exit" />
+            app:destination="@id/lostDetailsragment" />
         <action
             android:id="@+id/action_lostsChildrensFragment_to_homeFragment"
             app:destination="@id/homeFragment" />

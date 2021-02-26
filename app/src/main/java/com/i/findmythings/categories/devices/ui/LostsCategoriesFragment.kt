@@ -119,7 +119,7 @@ class LostsCategoriesFragment : Fragment() {
         val rootRef = Firebase.database.reference.child("All_Losts")
 
         var query: Query = rootRef.child(MainChild)
-                .orderByChild("serial_number_of_lost")
+                .orderByChild("serial_number_of_lost").limitToFirst(2)
                 .startAt(userText).endAt(userText + "\uf8ff")
 
 

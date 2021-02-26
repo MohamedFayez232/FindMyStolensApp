@@ -108,4 +108,8 @@
     <string name="serial_number_length">16 رقم او حرف علي الاقل</string>
     <string name="email_validations">يجب ان يحتوي الايميل علي @ و زcom</string>
     <string name="must_be_5_numbers">يجب ان تكون  5 ارقام</string>
+    <string name="registred_before">هل سجلت من قبل ؟</string>
+    <string name="not_member">الست عضوا معنا ؟</string>
+    <string name="forgot_pass">نسيت كلمة السر</string>
+    <string name="login">دخول</string>
 </resources>

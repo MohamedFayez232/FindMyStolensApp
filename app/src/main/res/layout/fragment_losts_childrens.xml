@@ -7,13 +7,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:overScrollMode="never">
+        android:overScrollMode="never"
+        android:background="@drawable/background_shape">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
             android:layout_width="0dp"
             android:layout_height="240dp"
-            android:background="#DC016A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_margin="25dp"
                 android:src="@drawable/white_back_ic"
                 app:layout_constraintBottom_toTopOf="@+id/textView2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,19 +32,6 @@
                 app:layout_constraintVertical_bias="0.444" />
 
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="92dp"
-                android:gravity="center"
-                android:text="@string/what_your_search_children"
-                android:textColor="#fff"
-                android:layout_marginEnd="30dp"
-                android:layout_marginStart="30dp"
-                android:textSize="20sp"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="44dp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout4"
@@ -55,14 +43,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
                 app:layout_constraintVertical_bias="0.34">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textInputEditText_searc_childrens"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/edit_text_style"
                     android:hint="@string/enter_child_name"
@@ -95,7 +82,7 @@
             android:id="@+id/children_losts_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:overScrollMode="never"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"

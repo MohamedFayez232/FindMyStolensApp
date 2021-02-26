@@ -96,4 +96,8 @@
     <string name="serial_number_length">"16 Number or Char "</string>
     <string name="email_validations">Must Contains @ and .com</string>
     <string name="must_be_5_numbers">Must Be only 5 Numbers</string>
+    <string name="registred_before">Registred ?</string>
+    <string name="not_member">Not Registred Yet ?</string>
+    <string name="forgot_pass">Forget Password ?</string>
+    <string name="login">LogIn</string>
 </resources>

@@ -9,8 +9,6 @@
     app:cardPreventCornerOverlap="true"
     app:cardCornerRadius="10dp">
 
-
-
         <ImageView
             android:id="@+id/image_imageview_firebase_Recycler"
             android:layout_width="match_parent"
