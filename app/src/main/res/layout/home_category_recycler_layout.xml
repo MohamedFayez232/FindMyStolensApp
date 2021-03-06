@@ -13,7 +13,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="190dp"
-            android:layout_height="220dp"
+            android:layout_height="190dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="15dp"
             android:elevation="5dp"
@@ -21,12 +21,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="174dp">
+                android:layout_height="144dp">
 
                 <ImageView
                     android:id="@+id/category_image"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
+                    android:layout_height="195dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_launcher_background" />
 

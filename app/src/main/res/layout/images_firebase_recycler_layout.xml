@@ -12,7 +12,7 @@
         <ImageView
             android:id="@+id/image_imageview_firebase_Recycler"
             android:layout_width="match_parent"
-            android:layout_height="440dp"
+            android:layout_height="410dp"
             android:src="@drawable/childrens_image"
             android:scaleType="fitXY"
             android:adjustViewBounds="true"/>

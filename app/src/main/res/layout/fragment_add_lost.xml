@@ -8,8 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".add_lost.ui.AddLostFragment"
-        android:background="@color/white">
+        tools:context=".add_lost.ui.AddLostFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout7"
@@ -303,7 +302,7 @@
                         android:layout_marginStart="50dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginEnd="50dp"
-                        android:textColor="@color/white"
+
                         android:background="@color/design_default_color_primary"
                         android:layout_marginBottom="20dp"
                         android:text="@string/next_text_button" />

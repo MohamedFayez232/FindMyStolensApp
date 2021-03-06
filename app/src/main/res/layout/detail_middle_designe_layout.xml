@@ -6,8 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:overScrollMode="never"
-        android:background="@color/white">
+        android:overScrollMode="never">
 
 
     <RelativeLayout
@@ -48,7 +47,8 @@
                 android:text="@string/serial_number"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="right"
                 android:textSize="17sp" />
 
             <RelativeLayout
@@ -94,7 +94,8 @@
                     android:text="@string/date"
                     android:layout_marginEnd="20dp"
                     android:layout_marginTop="20dp"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="right"
                     android:textSize="17sp"/>
 
             <RelativeLayout
@@ -141,7 +142,8 @@
                     android:text="@string/place"
                     android:layout_marginEnd="20dp"
                     android:layout_marginTop="20dp"
-                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="right"
                     android:textSize="17sp"/>
 
                 <RelativeLayout
@@ -195,7 +197,8 @@
                         android:text="@string/color_tittle"
                        android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
-                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="right"
                         android:textSize="17sp"/>
 
                     <RelativeLayout
@@ -244,7 +247,8 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="20dp"
-                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="right"
                         android:textSize="17sp"
                         android:text="@string/type" />
 
@@ -334,8 +338,9 @@
                             android:layout_toStartOf="@id/publisher_name_icon"
                             android:layout_marginEnd="20dp"
                             android:layout_marginTop="10dp"
+
+                            android:textStyle="bold"
                             android:gravity="right"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
                     </RelativeLayout>
 
@@ -363,8 +368,8 @@
                             android:layout_toStartOf="@id/publisher_phone_icon"
                             android:layout_marginEnd="20dp"
                             android:layout_marginTop="10dp"
+                            android:textStyle="bold"
                             android:gravity="right"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
                     </RelativeLayout>
 
@@ -392,8 +397,8 @@
                             android:layout_toStartOf="@id/publisher_address_icon"
                             android:layout_marginEnd="20dp"
                             android:layout_marginTop="10dp"
+                            android:textStyle="bold"
                             android:gravity="right"
-                            android:textColor="@color/black"
                             android:textSize="16sp" />
                     </RelativeLayout>
 

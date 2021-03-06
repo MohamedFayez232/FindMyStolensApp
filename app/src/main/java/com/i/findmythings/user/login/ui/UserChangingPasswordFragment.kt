@@ -76,6 +76,7 @@ class UserChangingPasswordFragment : Fragment() {
                    checkFromUserSeurityQuestion(userInput.toString())
                }
                 else{
+                   checkFromUserSeurityQuestion("")
                    Toast.makeText(requireActivity(),resources.getString(R.string.not_text),
                    Toast.LENGTH_SHORT).show()
                 }

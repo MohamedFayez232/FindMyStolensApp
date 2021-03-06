@@ -6,13 +6,13 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="match_parent"
+       >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        >
 
         <ImageView
             android:id="@+id/cancel_reister_ic"
@@ -36,7 +36,7 @@
             android:hint="@string/username"
             android:textColor="@color/black"
             android:textColorHint="#938B8B"
-            android:textSize="10sp"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +50,11 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:textColor="@color/black"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:background="@drawable/edit_text_loginstyle"
             android:textColorHint="#938B8B"
             android:hint="@string/UserPhone"
+            android:inputType="phone"
             app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +83,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
+            android:textColorHint="#938B8B"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:layout_marginEnd="20dp"
@@ -130,14 +132,14 @@
         <Button
             android:id="@+id/register_button"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="12dp"
             android:layout_marginStart="20dp"
+            android:textSize="12sp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/radious_button_style"
             android:text="@string/register_button"
-            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.755"
             app:layout_constraintStart_toStartOf="parent"
@@ -160,15 +162,14 @@
 
         <TextView
             android:id="@+id/register_login_text"
-            android:layout_width="61dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="16dp"
             android:text="@string/login"
             android:textColor="#FF008D"
             android:textSize="12sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/text3"
             app:layout_constraintTop_toBottomOf="@+id/register_button"

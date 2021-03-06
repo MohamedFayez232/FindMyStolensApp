@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never"
-        android:background="@drawable/background_shape">
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
@@ -25,12 +25,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_margin="25dp"
-                android:src="@drawable/white_back_ic"
-                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                android:src="@drawable/back_ic"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.444" />
-
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,10 +37,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginTop="26dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back_iamge_to_mainFragmrnt"
                 app:layout_constraintVertical_bias="0.34">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -57,6 +57,8 @@
                     android:paddingLeft="10dp"
                     android:paddingEnd="50dp"
                     android:paddingRight="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#AAA3A3"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
@@ -82,10 +84,10 @@
             android:id="@+id/children_losts_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:overScrollMode="never"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -99,11 +101,10 @@
             android:layout_height="30dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/children_losts_recycler"
             app:layout_constraintEnd_toEndOf="@+id/children_losts_recycler"
             app:layout_constraintStart_toStartOf="@+id/children_losts_recycler"
-            app:layout_constraintTop_toTopOf="@+id/children_losts_recycler" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
         <TextView
             android:id="@+id/children_founded_children_recycler_text"

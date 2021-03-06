@@ -34,10 +34,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 app:menu="@menu/bottom_nav_menu"
-                android:background="@color/white"
                 android:layout_alignParentBottom="true"
-                android:backgroundTint="@color/white"
                 app:labelVisibilityMode="labeled"
+                app:itemRippleColor="#FF00A9"
+                app:itemIconTint="@color/black"
                 android:overScrollMode="never" />
 
         </RelativeLayout>

@@ -21,7 +21,7 @@
             android:useLevel="true">
 
             <solid
-                android:color="@color/white"/>
+                android:color="#2C2B2B"/>
             <corners
                 android:bottomLeftRadius="0dp"
                 android:topLeftRadius="260dp"

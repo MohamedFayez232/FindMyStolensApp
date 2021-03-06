@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -43,6 +44,7 @@ class LostsCategoriesFragment : Fragment() {
         // inflate layout
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_losts_categories,
                 container, false)
+
 
 
         // view Model
@@ -119,7 +121,7 @@ class LostsCategoriesFragment : Fragment() {
         val rootRef = Firebase.database.reference.child("All_Losts")
 
         var query: Query = rootRef.child(MainChild)
-                .orderByChild("serial_number_of_lost").limitToFirst(2)
+                .orderByChild("serial_number_of_lost").limitToFirst(1)
                 .startAt(userText).endAt(userText + "\uf8ff")
 
 

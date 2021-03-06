@@ -6,8 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_shape">
+        android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -24,26 +23,24 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
           android:layout_margin="25dp"
-            android:src="@drawable/white_back_ic"
+            android:src="@drawable/back_ic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.444" />
-
-
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.722">
+            app:layout_constraintTop_toBottomOf="@+id/back_iamge_categories_main"
+            app:layout_constraintVertical_bias="0.34">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/serach_editText"
@@ -53,16 +50,19 @@
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp"
                 android:paddingEnd="50dp"
-                android:textColor="@color/black"
+                android:layout_marginTop="16dp"
                 android:paddingRight="50dp"
+                android:textColorHint="#AAA3A3"
+                android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/search_imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/search_ic"
                 android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/search_ic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/serach_editText"
                 app:layout_constraintTop_toTopOf="parent"
@@ -71,6 +71,19 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/losts_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.042" />
 
         <ProgressBar
             android:id="@+id/progress_bar_categories"
@@ -100,19 +113,7 @@
             app:layout_constraintVertical_bias="0.513"
             tools:layout_editor_absoluteX="16dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/losts_recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-            app:layout_constraintVertical_bias="0.042" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,46 +6,41 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
+        android:layout_height="match_parent">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:lottie_rawRes="@raw/you_are_safe_animation"
-            app:lottie_autoPlay="true"
-            app:layout_constraintBottom_toTopOf="@+id/email_login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_login"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="14dp"
             android:layout_marginEnd="40dp"
+            android:layout_marginTop="40dp"
+            android:textSize="13sp"
             android:background="@drawable/edit_text_loginstyle"
             android:hint="@string/userEmail"
             android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/animation_view" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userpass"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="40dp"
+            android:textSize="13sp"
             android:background="@drawable/edit_text_loginstyle"
             android:hint="@string/userPass"
             android:textColorHint="@color/black"
@@ -58,14 +53,13 @@
         <Button
             android:id="@+id/login_button"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="66dp"
             android:background="@drawable/radious_button_style"
             android:text="@string/login_button"
-            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.759"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +71,7 @@
             android:layout_height="wrap_content"
             android:text="@string/forgot_pass"
             android:textColor="#FF008D"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:layout_marginEnd="50dp"
             android:layout_marginLeft="50dp"
             android:textStyle="bold"
@@ -95,9 +89,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="60dp"
             android:text="@string/not_member"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:layout_marginBottom="20dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/login_button"
@@ -110,10 +104,9 @@
             android:layout_marginEnd="20dp"
             android:text="@string/register_button"
             android:textColor="#FF008D"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:layout_marginBottom="20dp"
-            android:textStyle="bold"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/text3"
             app:layout_constraintTop_toBottomOf="@+id/login_button"
@@ -131,5 +124,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

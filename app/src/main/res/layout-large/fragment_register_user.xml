@@ -6,13 +6,11 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/cancel_reister_ic"
@@ -55,6 +53,7 @@
                 android:background="@drawable/edit_text_loginstyle"
                 android:textColorHint="#938B8B"
                 android:hint="@string/UserPhone"
+                android:inputType="phone"
                 app:layout_constraintHorizontal_bias="0.476"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +85,7 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="40dp"
+                android:textColorHint="#938B8B"
                 android:background="@drawable/edit_text_loginstyle"
                 app:layout_constraintHorizontal_bias="0.476"
                 android:hint="@string/userEmail"
@@ -136,7 +136,6 @@
                 android:layout_marginTop="32dp"
                 android:background="@drawable/radious_button_style"
                 android:text="@string/register_button"
-                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.755"
                 app:layout_constraintStart_toStartOf="parent"

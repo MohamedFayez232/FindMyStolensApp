@@ -6,13 +6,11 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FBF7F7">
+        android:layout_height="match_parent">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
-            android:background="@color/white"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -97,7 +95,7 @@
             android:layout_below="@+id/details_layiut"
             android:layout_marginEnd="20sp"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold"/>
 
         <RelativeLayout
             android:id="@+id/devices_recycle_layout"
@@ -110,8 +108,8 @@
                 android:id="@+id/user_profile_devices_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginBottom="20dp"/>
 
 
@@ -146,7 +144,7 @@
             android:layout_below="@+id/devices_recycle_layout"
             android:layout_marginEnd="20sp"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold"/>
 
             <RelativeLayout
                 android:id="@+id/childrens_reports_recycle"
@@ -161,8 +159,8 @@
                 android:id="@+id/user_profile_childrens_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginBottom="20dp"/>
 
                 <ProgressBar
@@ -182,8 +180,7 @@
                     android:gravity="center"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="80dp"
-                    android:textColor="@color/black"/>
+                    android:layout_marginTop="80dp" />
         </RelativeLayout>
 
 
@@ -192,7 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/white"
+
             android:layout_marginBottom="20dp"
             android:layout_below="@+id/childrens_reports_recycle">
 
@@ -219,7 +216,7 @@
                 android:text="تسجيل الخروج"
                 android:layout_toStartOf="@id/log_out_image"
                 android:layout_marginEnd="15dp"
-                android:textColor="@color/black"/>
+                android:textStyle="bold"/>
         </RelativeLayout>
 
 
